@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@100;700&family=Montserrat:wght@500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .5s ease;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #F2E9E4;
+    width: 100vw;
+    
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+}
+
+.imagem-um {
+    display: none;
+}
+
+.imagem-dois {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    width: 390px;
+    padding: 1em 1em 0 1em;
+}
+
+.conteudo__quadro {
+    height: 65vh;
+    background-color: white;
+    margin: 0em 1em;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.conteudo__quadro-texto {
+    padding: 1em 1.5em;
+}
+
+.conteudo__preview {
+    font-family: 'Fraunces', serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin: 1em 0;
+    font-size: 1.5rem;
+    letter-spacing: .3em;
+}
+
+.conteudo__h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 1.9rem;
+    margin-bottom: 1em;
+}
+
+.conteudo__texto {
+    font-size: 1.2rem;
+    margin-bottom: 1em;
+}  
+
+.conteudo__preços {
+    display: flex;
+    align-items: center;
+}
+
+.conteudo__preço {
+    font-family: 'Fraunces', serif;
+    color: #458C6B;
+    font-size: 3rem;
+    padding: 0 .5em 0 0 ;
+}
+
+.conteudo__caixa-segundo {
+    padding: 3em 0;
+    text-align: center;
+}
+
+.conteudo__caixa {
+    font-size: 1.5rem;
+    background-color: #458C6B;
+    padding: .8em 2.8em;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.quebra {
+    display: none;
+}
+
+/*#1B402E*/
+
+@media screen and (min-width: 1440px) {
+    .conteudo {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .imagem-dois {
+        display: none;
+    }
+
+    .imagem-um {
+        height: 620px;
+        display: block;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    .conteudo__quadro {
+        margin: 0;
+        width: 400px;
+        height: 620px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    .conteudo__h1 {
+        font-size: 3rem;
+    }
+
+    .quebra {
+        display: block;
+    }
+
+    .conteudo__caixa:hover {
+        background-color: #1B402E;
+    }
+
+    .conteudo__caixa {
+        padding: .7em 3.7em;
+    } 
+
+    
+}
